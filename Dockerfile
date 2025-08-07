@@ -1,10 +1,10 @@
 # Use a lightweight Python image
-FROM python:3.12-slim
+FROM python:slim
 
 # Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
-
+    
 #PYTHONDONTWRITEBYTECODE=1 → prevents Python from creating .pyc files (keeps the container clean).
 
 #PYTHONUNBUFFERED=1 → ensures Python output is shown immediately in logs (no buffering).
