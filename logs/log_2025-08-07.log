@@ -54,3 +54,39 @@
 2025-08-07 20:34:19,089 - src.training_data - INFO - Saving Model
 2025-08-07 20:34:19,160 - src.training_data - INFO - Logging the model into MLFLOW
 2025-08-07 20:34:24,399 - src.training_data - INFO - Logging Model Params & Metrics into MLFLOW
+2025-08-07 21:39:48,086 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-08-07 21:39:48,086 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 21:51:47,686 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-08-07 21:51:47,687 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 21:52:23,811 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-08-07 21:52:23,811 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 21:53:05,318 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:53:05] "[33mGET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC HTTP/1.1[0m" 404 -
+2025-08-07 21:53:08,296 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:53:08] "[33mGET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC HTTP/1.1[0m" 404 -
+2025-08-07 21:53:08,348 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:53:08] "GET / HTTP/1.1" 200 -
+2025-08-07 21:53:08,490 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:53:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-07 21:54:56,064 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:54:56] "GET / HTTP/1.1" 200 -
+2025-08-07 21:55:14,826 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-08-07 21:55:14,826 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 21:55:14,948 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:55:14] "GET / HTTP/1.1" 200 -
+2025-08-07 21:56:04,468 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 21:56:04] "POST / HTTP/1.1" 200 -
+2025-08-07 22:01:17,393 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-08-07 22:01:17,394 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 22:01:28,131 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 22:01:28] "POST / HTTP/1.1" 200 -
+2025-08-07 22:01:28,446 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 22:01:28] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-07 22:02:33,539 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 22:02:33] "POST / HTTP/1.1" 200 -
+2025-08-07 22:02:33,625 - werkzeug - INFO - 127.0.0.1 - - [07/Aug/2025 22:02:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
