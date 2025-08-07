@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/e7ff41c6e6d04fb1bef6b6ea52dcfb7c/artifacts
+end_time: 1754587329636
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7ff41c6e6d04fb1bef6b6ea52dcfb7c
+run_name: placid-rook-690
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754587314236
+status: 3
+tags: []
+user_id: omark

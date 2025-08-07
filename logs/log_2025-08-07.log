@@ -1,0 +1,64 @@
+2025-08-07 20:21:40,937 - utils.common_functions - INFO - Reading Yaml File : config/config.yaml
+2025-08-07 20:21:40,941 - utils.common_functions - INFO - Loading all the config file successfully
+2025-08-07 20:21:40,941 - src.data_ingestion - INFO - Start the Ingestion Process Through run method
+2025-08-07 20:21:40,942 - src.data_ingestion - INFO - Creating artifacts/raw for downloading the raw data
+2025-08-07 20:21:40,942 - src.data_ingestion - INFO - Downloading Data from gDrive
+2025-08-07 20:21:45,673 - src.data_ingestion - INFO - Successfully downloaded
+2025-08-07 20:21:45,805 - src.data_ingestion - INFO - Starting Train test split
+2025-08-07 20:21:45,825 - src.data_ingestion - INFO - Train Test Split Occur Successfully
+2025-08-07 20:21:45,996 - src.data_ingestion - INFO - Train Data is saved in artifacts/raw/train.csv
+2025-08-07 20:21:46,046 - src.data_ingestion - INFO - Test Data is saved successfully in : artifacts/raw/test.csv
+2025-08-07 20:21:46,046 - src.data_ingestion - INFO - Files are saved successfully
+2025-08-07 20:21:46,049 - src.data_ingestion - INFO - Downloading data & Splitting it into Train and Test occurred Successfully
+2025-08-07 20:21:46,049 - src.data_ingestion - INFO - Data Ingestion Step is Completed Successfully
+2025-08-07 20:21:46,049 - utils.common_functions - INFO - Reading Yaml File : config/config.yaml
+2025-08-07 20:21:46,052 - utils.common_functions - INFO - Loading all the config file successfully
+2025-08-07 20:21:46,053 - src.data_processing - INFO - Create Processing Folder
+2025-08-07 20:21:46,053 - src.data_processing - INFO - Running the Whole Process
+2025-08-07 20:21:46,053 - src.data_processing - INFO - Starting the PreProcessing Steps
+2025-08-07 20:21:46,053 - src.data_processing - INFO - Loading the CSV File
+2025-08-07 20:21:46,053 - utils.common_functions - INFO - Reading the CSV file from : artifacts/raw/raw.csv
+2025-08-07 20:21:46,125 - utils.common_functions - INFO - Data read Successfully
+2025-08-07 20:21:46,126 - src.data_processing - INFO - Dropping the ID Column
+2025-08-07 20:21:46,132 - src.data_processing - INFO - Splitting Data Columns into Categorical and Numerical
+2025-08-07 20:21:46,138 - src.data_processing - INFO - Creating the pipeline & ColumnTransformer
+2025-08-07 20:21:46,138 - src.data_processing - INFO - Train Test Split
+2025-08-07 20:21:46,149 - src.data_processing - INFO - x_train shape :(29020, 17)
+2025-08-07 20:21:46,150 - src.data_processing - INFO - x_test shape :(7255, 17)
+2025-08-07 20:21:46,150 - src.data_processing - INFO - y_train shape :(29020,)
+2025-08-07 20:21:46,150 - src.data_processing - INFO - y_test shape :(7255,)
+2025-08-07 20:21:46,150 - src.data_processing - INFO - Encoding The Target Col
+2025-08-07 20:21:46,158 - src.data_processing - INFO - Modeling Stage
+2025-08-07 20:21:46,158 - src.data_processing - INFO - Applying pipeline to x_train , y_train
+2025-08-07 20:21:48,136 - src.data_processing - INFO - Applying pipeline to x_test
+2025-08-07 20:21:48,150 - src.data_processing - INFO - Conversion x_train , x_test into DataFrames
+2025-08-07 20:21:48,159 - src.data_processing - INFO - Training the Data on the model
+2025-08-07 20:21:52,431 - src.data_processing - INFO - Here is the model Performance
+2025-08-07 20:21:52,432 - src.data_processing - INFO - Accuracy : 0.9054445210199862
+2025-08-07 20:21:52,432 - src.data_processing - INFO - Precision : 0.9254251178037287
+2025-08-07 20:21:52,432 - src.data_processing - INFO - Recall : 0.9334573258937797
+2025-08-07 20:21:52,432 - src.data_processing - INFO - F1 Score : 0.905234263695081
+2025-08-07 20:21:52,432 - src.data_processing - INFO - ROC : 0.8913975371190753
+2025-08-07 20:21:52,432 - src.data_processing - INFO - Saving Model and Data and Pipeline
+2025-08-07 20:21:53,445 - utils.common_functions - INFO - Reading Yaml File : config/config.yaml
+2025-08-07 20:21:53,447 - utils.common_functions - INFO - Loading all the config file successfully
+2025-08-07 20:21:53,447 - src.training_data - INFO - Create Training Folder
+2025-08-07 20:21:54,323 - src.training_data - INFO - Starting the Training Process
+2025-08-07 20:21:54,324 - src.training_data - INFO - Starting MLFLOW Experiment Tracking
+2025-08-07 20:21:54,324 - src.training_data - INFO - Logging the Training  and testing dataset into MLFLOW
+2025-08-07 20:21:54,476 - src.training_data - INFO - Loading x_train , x_test
+2025-08-07 20:21:54,624 - src.training_data - INFO - Loading y_train , y_test
+2025-08-07 20:21:54,655 - src.training_data - INFO - Starting the Training Process
+2025-08-07 20:21:54,655 - src.training_data - INFO - Starting HyperParameterTuning 
+2025-08-07 20:21:54,655 - src.training_data - INFO - Fit Data
+2025-08-07 20:22:03,848 - src.training_data - INFO - Getting the best parameters
+2025-08-07 20:22:03,848 - src.training_data - INFO - Best Model Parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 18, 'n_estimators': 314, 'num_leaves': 94}
+2025-08-07 20:22:03,848 - src.training_data - INFO - Evaluating the model
+2025-08-07 20:22:03,905 - src.training_data - INFO - Accuracy : 0.9035148173673329
+2025-08-07 20:22:03,905 - src.training_data - INFO - Precision : 0.9226056769450685
+2025-08-07 20:22:03,905 - src.training_data - INFO - Recall : 0.9336639801611903
+2025-08-07 20:22:03,905 - src.training_data - INFO - F1 Score : 0.9032161055519792
+2025-08-07 20:22:03,905 - src.training_data - INFO - ROC : 0.888396559617019
+2025-08-07 20:22:03,905 - src.training_data - INFO - Saving Model
+2025-08-07 20:22:03,989 - src.training_data - INFO - Logging the model into MLFLOW
+2025-08-07 20:22:09,585 - src.training_data - INFO - Logging Model Params & Metrics into MLFLOW

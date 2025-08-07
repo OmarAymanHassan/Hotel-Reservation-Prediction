@@ -1,0 +1,32 @@
+data_ingestion:
+  root_dir : artifacts/raw
+  raw_file : artifacts/raw/raw.csv
+  train_file : artifacts/raw/train.csv
+  test_file : artifacts/raw/test.csv
+  source_url : https://drive.google.com/file/d/1J1mkxFQsG_LcC15PXB4_DwSTfKAsHstR/view?usp=drive_link
+  train_ratio : 0.8
+
+
+data_processing:
+  processed_dir : artifacts/processing 
+  raw_file : artifacts/raw/raw.csv
+  train_file : artifacts/processing/processed_train.csv
+  test_file : artifacts/processing/processed_test.csv
+  booking_id : Booking_ID
+  target_col : booking_status
+  train_ratio : 0.8
+  random_state : 42
+  skewness_threshold : 10
+
+data_training:
+
+  root_dir : artifacts/training
+  train_processed : artifacts/processing/processed_train.csv
+  test_processed : artifacts/processing/processed_test.csv
+  y_train : artifacts/processing/y_train.csv
+  y_test : artifacts/processing/y_test.csv
+  model : artifacts/training/model.pkl
+  random_state: 42
+
+
+

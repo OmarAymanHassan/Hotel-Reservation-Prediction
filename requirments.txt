@@ -1,0 +1,13 @@
+pandas 
+numpy
+ipykernel
+pyyaml
+python-box
+gdown
+scikit-learn == 1.5
+matplotlib
+seaborn
+xgboost
+lightgbm
+imbalanced-learn 
+mlflow

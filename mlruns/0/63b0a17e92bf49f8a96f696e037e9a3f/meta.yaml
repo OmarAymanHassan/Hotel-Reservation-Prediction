@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/63b0a17e92bf49f8a96f696e037e9a3f/artifacts
+end_time: 1754585824453
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 63b0a17e92bf49f8a96f696e037e9a3f
+run_name: resilient-elk-386
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754585808288
+status: 3
+tags: []
+user_id: omark
