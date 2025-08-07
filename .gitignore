@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+mlruns/
+logs/
+hotel_reservation_prediction.egg-info
+artifacts/

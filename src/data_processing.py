@@ -162,9 +162,9 @@ class DataProcessing:
         return model
     
 
-    def save_model(self , x_train , y_train , x_test , y_test , model , full_pipeline , le):
-        logger.info("Saving Model and Data and Pipeline")
-        joblib.dump(model ,os.path.join(self.root_dir,"model.pkl"))
+    def save_model(self , x_train , y_train , x_test , y_test  , full_pipeline , le):
+        #logger.info("Saving Model and Data and Pipeline")
+        #joblib.dump(model ,os.path.join(self.root_dir,"model.pkl"))
         joblib.dump(full_pipeline,os.path.join(self.root_dir,"pipeline.pkl"))
         joblib.dump(le,os.path.join(self.root_dir,"label_encoder.pkl"))
 
@@ -188,9 +188,9 @@ class DataProcessing:
 
         x_train ,x_test, y_train , y_test,le = self.splitting_data(df ,full_pipeline , skewness_cols , non_skewness_cols , cat_cols)
 
-        model = self.modeling(x_train , x_test , y_train , y_test)
+        #model = self.modeling(x_train , x_test , y_train , y_test)
 
-        self.save_model(x_train , y_train , x_test , y_test , model , full_pipeline ,le)
+        self.save_model(x_train , y_train , x_test , y_test  , full_pipeline ,le)
 
 
 
