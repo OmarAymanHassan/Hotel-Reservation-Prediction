@@ -149,7 +149,7 @@ Hotel Reservation Prediction/
 
 2. **Data Processing** (`src/data_processing.py`)
    - Removes irrelevant columns (Booking_ID)
-   - Handles categorical encoding (Label Encoding, One-Hot Encoding)
+   - Handles categorical encoding (Ordinal Encoding, One-Hot Encoding)
    - Applies feature scaling and normalization
    - Implements SMOTE for handling class imbalance
    - Manages skewness detection and transformation
